@@ -77,7 +77,7 @@ export default function CardioWarmups() {
       ) : (
         <TableContainer
           component={Paper}
-          sx={{ backgroundColor: "transparent" }}
+          sx={{ backgroundColor: "transparent", borderRadius: 2 }}
         >
           <Table>
             <TableHead>
@@ -101,13 +101,8 @@ export default function CardioWarmups() {
             </TableHead>
             <TableBody>
               {cardioWarmups.map((warmup, i) => (
-                <TableRow
-                  key={i}
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row">
-                    {warmup.name}
-                  </TableCell>
+                <TableRow key={i}>
+                  <TableCell>{warmup.name}</TableCell>
                   <TableCell>{warmup.intensity}</TableCell>
                   <TableCell>{warmup.bodyPart}</TableCell>
                   <TableCell>{warmup.duration}</TableCell>

@@ -88,7 +88,7 @@ export default function StretchingWarmups() {
           <Grid container spacing={2}>
             {stretchingWarmups.map((warmup, i) => (
               <Grid key={i} size={{ sm: 12, md: 6, lg: 4 }}>
-                <Card sx={{ backgroundColor: "#fff", p: 2 }}>
+                <Card sx={{ backgroundColor: "#fff", p: 2, borderRadius: 2 }}>
                   <Typography
                     variant="h6"
                     color="darkGreen"
